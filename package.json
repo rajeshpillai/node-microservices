@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "gateway": "nodemon ./packages/gateway/server.js ",
+    "db": "nodemon ./packages/database_service/server.js ",
+    "start": "npm run gateway | npm run db"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.2"
+  }
+}
